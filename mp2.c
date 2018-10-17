@@ -40,9 +40,9 @@ void main(void){
 
 
 		if((I2C_MasterTransferData(LPC_I2C1, &test,I2C_TRANSFER_POLLING)) != 0){
-			char temp[5];
-			sprintf(temp, "%2X\n\r",x);
-			write_usb_serial_blocking(temp,5);
+			char temp[7];
+			sprintf(temp, "%2X\n\n\n\r",x);
+			write_usb_serial_blocking(temp,7);
 					
 		}
 	}
